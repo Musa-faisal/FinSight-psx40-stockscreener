@@ -211,7 +211,7 @@ div[data-testid="stMetric"] [data-testid="stMetricValue"] {{
 # ENGINE
 # ═══════════════════════════════════════════════════════════════════
 
-@st.cache_resource(show_spinner="⬡  Initialising engine...")
+@st.cache_resource(show_spinner=True)
 def load_engine() -> ScreenerEngine:
     e = ScreenerEngine()
     e.run()
